@@ -1,5 +1,5 @@
 from django.db import models
-from savvi.apps.users import User
+from savvi.apps.users.models import User
 
 class Idea(models.Model):
     author = models.ForeignKey(User)
