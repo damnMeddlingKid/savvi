@@ -7,12 +7,9 @@ class Idea(models.Model):
     upvote_count = models.IntegerField()
     downvote_count = models.IntegerField()
     
-
 class Comment(models.Model):
     author = models.ForeignKey(User)
     topic = models.ForeignKey(Idea)
-    content = models.TextField()
-    
-    
+    content = models.TextField()    
     
 

@@ -78,10 +78,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'savvi_db',
-	'USER': 'savvi_dev',
-	'PASSWORD': 'qwerty',
-	'HOST': 'localhost',
-	'PORT': ''
+    	'USER': 'savvi_dev',
+    	'PASSWORD': 'qwerty',
+    	'HOST': 'localhost',
+    	'PORT': ''
     }
 }
 
