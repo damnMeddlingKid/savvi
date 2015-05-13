@@ -1,10 +1,18 @@
 from django.db import models
+from savvi.apps.users import User
 
-# Create your models here.
-class idea(models.Model):
-    #To do idea modeling by frank :D
+class Idea(models.Model):
+    author = models.ForeignKey(User)
+    content = models.CharField(max_length=300)
+    upvote_count = models.IntegerField()
+    downvote_count = models.IntegerField()
     
 
-class comments(models.Model):
-    #also to do
+class Comment(models.Model):
+    author = models.ForeignKey(User)
+    topic = models.ForeignKey(Idea)
+    content = models.TextField()
+    
+    
+    
 
