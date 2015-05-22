@@ -1,6 +1,6 @@
 from enum import Enum
 from django.db import models
-from savvi.apps.users.models import User
+from django.contrib.auth.models import User
 
 VoteType = Enum('VoteType','UP_VOTE DOWN_VOTE')
 
