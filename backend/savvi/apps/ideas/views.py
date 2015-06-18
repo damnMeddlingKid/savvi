@@ -11,7 +11,7 @@ from .models import Idea
 #Need to do some research
 def render_to_json(model_array):
     response = serializers.serialize('json',model_array)
-    return HttpResponse(response[0],mimetype="application/json")
+    return HttpResponse(response,content_type="application/json")
 
 def index(request,idea_id):
     try:
@@ -26,9 +26,9 @@ def top_ideas(request):
     return render_to_json(ideas)
 
 #Grab all ideas with id greater than the last read idea
-def ideas_from(request,id,page_limit):
+def ideas_from(request,idea_id,page_limit):
 
-    idea_list = Idea.objects.filter(pk__gt=id)
+    idea_list = Idea.objects.filter(pk__gt=idea_id)
     pages = Paginator(idea_list,page_limit)
     page_number = request.GET.get('page')
 
