@@ -37,6 +37,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'savvi.apps.ideas',
+    'savvi.apps.users'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -78,10 +80,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'savvi_db',
-	'USER': 'savvi_dev',
-	'PASSWORD': 'qwerty',
-	'HOST': 'localhost',
-	'PORT': ''
+    	'USER': 'savvi_dev',
+    	'PASSWORD': 'qwerty',
+    	'HOST': 'localhost',
+    	'PORT': ''
     }
 }
 
