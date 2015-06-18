@@ -7,7 +7,7 @@ from .models import Idea
 
 #TODO move this method into a helper class
 def jsonEncodedResponse(model_array):
-    response = serializers.serialize('json',[idea,])
+    response = serializers.serialize('json',model_array)
     return HttpResponse(response[0],mimetype="application/json")
 
 def index(request,idea_id):
