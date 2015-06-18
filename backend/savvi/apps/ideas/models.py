@@ -7,8 +7,9 @@ VoteType = Enum('VoteType','UP_VOTE DOWN_VOTE')
 class Idea(models.Model):
     author = models.ForeignKey(User)
     content = models.CharField(max_length=300)
-    upvote_count = models.IntegerField()
-    downvote_count = models.IntegerField()
+    pub_date = models.DateTimeField('date published')
+    upvote_count = models.IntegerField(default=0)
+    downvote_count = models.IntegerField(default=0)
 
     #this will be ok for the MVP, but it wont scale.
     #should do it async
@@ -19,10 +20,17 @@ class Idea(models.Model):
             self.downvote_count += 1
         else:
             raise Exception('INVALID VOTE %d' % vote_type)
+        self.save()
+
+    def __str__(self):
+	return self.content
     
 class Comment(models.Model):
     author = models.ForeignKey(User)
     idea = models.ForeignKey(Idea)
     content = models.TextField()    
     parent = models.ForeignKey('self',null=True,blank=True)
+
+    def __str__(self):
+	return self.content
 
