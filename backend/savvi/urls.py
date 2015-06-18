@@ -16,7 +16,9 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from apps.users import urls as users_urls
+
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^user/', include(users_urls)),
+    url(r'^idea/', include(ideas.urls)),
 ]

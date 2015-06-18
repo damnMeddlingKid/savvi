@@ -7,7 +7,7 @@ VoteType = Enum('VoteType','UP_VOTE DOWN_VOTE')
 class Idea(models.Model):
     author = models.ForeignKey(User)
     content = models.CharField(max_length=300)
-    pub_date = models.DateTimeField('date published')
+    pub_date = models.DateTimeField(auto_now_add=True)
     upvote_count = models.IntegerField(default=0)
     downvote_count = models.IntegerField(default=0)
 
