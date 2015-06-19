@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SavviApp</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="vote_up">Like</string>
+    <string name="vote_down">Dislike</string>
+
+</resources>
