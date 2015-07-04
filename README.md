@@ -7,8 +7,8 @@ Savvi is a light weight app to jot down ideas and poll people's thoughts on idea
 Savvi uses the following technologies
 
 Backend:
-* Python/Django web framework
-* Postgresql database
+* Python/Django 
+* Postgresql 
 * Gunicorn
 
 Frontend:
