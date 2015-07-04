@@ -1,6 +1,6 @@
 # Savvi (work in progress)
 
-Savvi is a light weight app to jot down ideas and poll people's thoughts on ideas you have. An idea can be anything from and "Uber for Cats" to your plans for world domination.
+Savvi is a light weight app to jot down ideas and poll people's thoughts on ideas you have. An idea can be anything from an "Uber for Cats" to your plans for world domination.
 
 ## Technology
 
