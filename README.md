@@ -26,7 +26,7 @@ Its a bit hairy right now, will be trying to bake the backend into a Docker imag
 
 The MIT License (MIT) 
 
-Copyright (c) 2015 Franklyn D'souza Maria Piao
+Copyright (c) 2015 Franklyn D'souza,Maria Piao
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
